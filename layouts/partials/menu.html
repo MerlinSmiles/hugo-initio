@@ -12,12 +12,14 @@
 
         <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
 
+            {{$firstUrlElement := print .URL }}
             <ul class="nav navbar-nav">
                 {{ range .Site.Menus.main }}
                 <li>
-                    <a href="{{ .URL }}">{{ .Name }}</a>
+                    <a class="{{if eq ($firstUrlElement|lower) (.URL|lower) }}current_page{{end}}" href="{{ .URL }}">{{ .Name }}</a>
                 </li>
                 {{end}}
+
                 <!--
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about">About</a></li>

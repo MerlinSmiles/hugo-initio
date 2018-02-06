@@ -70,7 +70,7 @@
 				<div class="widget-body">
 					<p class="text-right">
 						Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}<br>
-						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
+						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> -
                         Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
                     </p>
 				</div>
@@ -80,13 +80,14 @@
 	</div>
 </footer>
 
+</div>
 
 
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="{{ .Site.BaseURL }}js/template.js"></script>
-<script id="dsq-count-scr" src="//{{ .Site.Params.disqus.site }}/count.js" async></script>
+<!-- <script id="dsq-count-scr" src="//{{ .Site.Params.disqus.site }}/count.js" async></script> -->
 {{ partial "analyticstracking.html" . }}
 </body>
 </html>
